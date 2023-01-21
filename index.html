@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <header>
+        <h2 class="title">Rock Paper Scissors</h2>
+    </header>
+<section class="result-section" id="result-section">
+    <div class="all-time" id="all-time">
+        <div class="all-time-text" id="all-time-text">
+            <p>P1</p>
+            <p>Rounds Won</p>
+            <p>CP</p>
+        </div>
+        <div class="all-time-number-cells" id="all-time-number-cells">
+            <div class="p1-cell" id="p1-cell">0</div>
+            <div class="cp-cell" id="cp-cell">0</div>
+        </div>
+    </div>
+
+    <div class="session" id="session">
+        <div class="session-text" id="session-text">
+            <p>P1</p>
+            <p>Current Result</p>
+            <p>CP</p>
+        </div>
+        <div class="session-number-cells" id="session-number-cells">
+            <div class="p1-cell" id="session-p1-cell">0</div>
+            <div class="cp-cell" id="session-cp-cell">0</div>
+        </div>
+    </div>
+</section>
+<section class="game-section" id="game-section">
+    <div class="player-container">
+        <span>Player One Chooses...</span>
+    <div class="weapon-images">
+        <img data-option="ROCK" src="./img/rock.png">
+        <img data-option="PAPER" src="./img/paper.png">
+        <img data-option="SCISSORS" src="./img/scissors.png">
+    </div>    
+    </div>
+
+    <div class="computer-container">
+        <span>Computer Chooses...</span>
+    <div class="computer-weapon-images">
+        <img id="ROCK" src="./img/rock.png">
+        <img id="PAPER" src="./img/paper.png">
+        <img id="SCISSORS" src="./img/scissors.png">
+    </div>    
+    </div>
+</section>
+<section class="result">
+    <div class="display-result"><p id="show-result"></p></div>
+</section>
+<section class="restart-game">
+    <div class="play-again">
+        <button id="play-again">Next Battle</button>
+        <button id="play-another-round">Next Round</button>
+    </div>
+</section>
+    
+</body>
+</html>
